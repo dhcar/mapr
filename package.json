@@ -1,0 +1,24 @@
+{
+  "name": "mapr",
+  "version": "1.0.0",
+  "description": "Map challenge",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhcar/mapr.git"
+  },
+  "author": "David Helgeson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhcar/mapr/issues"
+  },
+  "homepage": "https://github.com/dhcar/mapr#readme"
+}

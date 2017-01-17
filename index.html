@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mapr</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"> 
+
+    </head>
+    <body>
+      <div id="map"></div>
+      <ul id="details" class="list details-list">
+
+        <li class="item">
+          <span>FavoriteUser</span>
+        </li>
+
+        <li class="item">
+          <span>ETA</span>
+          <span>{{14 minutes away}}</span>
+        </li>
+
+        <li class="item">
+          <span>Destination</span>
+          <span>{{Pivotal Labs}}</span>
+        </li>
+
+      </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNylE22pXubHGhpY3LPbX0OQ9ox0rSSLA"></script>
+
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/app.js"></script>
+
+</html>

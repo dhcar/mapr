@@ -1,0 +1,31 @@
+body{
+  background-color: rgb(63, 52, 76);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#map{
+ height: calc(100vh - 200px);
+}
+
+.list{
+}
+
+.details-list{
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.details-list li{
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.details-list li span{
+  font-size: 16px;
+  color: rgb(255,255,255);
+
+}
