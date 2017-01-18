@@ -21,9 +21,15 @@ body{
 .details-list{
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 24px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 16px;
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  .details-list{
+    margin-top: calc(50vh - 100px);
+  }
 }
 
 .details-list li{
