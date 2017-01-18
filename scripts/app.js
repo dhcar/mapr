@@ -1,7 +1,3 @@
-// 
-// declare constants
-// 
-
 var map, fb;
 
 var init = function() {
@@ -15,4 +11,29 @@ var init = function() {
 
 };
 
-init()
+init();
+
+var update_eta = function(snap) {
+  var eta_el = document.getElementById('eta');
+  if( snap.val() != 0){
+    var eta  = moment().valueOf() + 60 * 1000 * snap.val();
+    var text = moment( eta ).fromNow();
+    eta_el.textContent = ' ' + text;
+  } else {
+    eta_el.textContent = ' arrived';
+  }
+}
+
+var timer = new utils.Timer();
+
+var update_fb = function( minutes ){
+  fb.ref('timer').set( minutes )
+};
+
+// 
+// Timer runs in background to send fake updates to firebase
+// 
+
+timer.start(10, update_fb);
+
+fb.ref('timer').on('value', update_eta);
