@@ -36,4 +36,7 @@ var update_fb = function( minutes ){
 
 timer.start(10, update_fb);
 
+// 
+// Listen for timer changes from above
+// 
 fb.ref('timer').on('value', update_eta);
